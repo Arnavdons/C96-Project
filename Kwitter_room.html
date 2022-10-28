@@ -1,0 +1,42 @@
+<html><head>
+    <title>Lets Chat</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Kwitter_room.css"> 
+    </head>
+    <body id="room">
+    
+    <button id="logout_button" onclick="logout()"><b>Logout</b></button>
+    <center>
+    <div class="container">
+    <div>
+    <br>
+    <h1 id="wel"></h1>
+    <br>
+    <h3 id="rooms">Enter Your Room Name</h3>
+    
+    <input id="room_textbox" class="form-control" placeholder="#Room Name">
+    <br><br><br>
+    
+    <button id="room_button" onclick="addroom()" class="btn btn-info">Add room</button>
+    <br><br><br>
+    <h2 id="tre">Trending Rooms</h2>
+    <div id="trending-rooms">
+         
+    </div>
+    
+    
+    </div>
+</div>
+</center>
+<script src="kwitter_room.js"></script>
+    </body>
+    </html>
